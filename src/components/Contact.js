@@ -35,3 +35,8 @@ Contact.propTypes = {
   online: PropTypes.bool.isRequired,
 };
 
+Contact.defaultProps = {
+  online: true,
+  name: "Popey",
+  avatar:"https://randomuser.me/api/portraits/men/30.jpg",
+};
