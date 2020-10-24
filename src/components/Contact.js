@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-
+import PropTypes from "prop-types"
 
 class Contact extends React.Component {
   constructor(props) {
@@ -28,11 +28,11 @@ class Contact extends React.Component {
   );
 }
 }
-/*
+
 Contact.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   online: PropTypes.bool.isRequired,
 };
-*/
+
 export default Contact;
