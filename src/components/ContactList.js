@@ -32,12 +32,12 @@ const Contacts = [
 
     
     return( 
-      Contacts.map((item,itt)=>(
+      Contacts.map((item)=>(
         <Contact
         name ={item.name}
         avatar ={item.avatar}
         online ={item.online}
-        key={itt}
+        key={item.name}
         />
       ))
   );
