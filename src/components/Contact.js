@@ -18,7 +18,7 @@ export default class Contact extends Component {
         <h4 className="name">{this.props.name}</h4>
         <div className="status"
          onClick={event => {
-            this.state.online ? this.setState({online : true}) : this.setState({online: false});
+            this.state.online ? this.setState({online : false}) : this.setState({online: true});
         }}>
       <div className={this.state.online ? "status-online" : "status-offline"}/>
       <p className="status-text">{this.state.online ? "online" : "offline"}</p>
@@ -35,8 +35,3 @@ Contact.propTypes = {
   online: PropTypes.bool.isRequired,
 };
 
-Contact.defaultProps = {
-  online: true,
-  name: "Popey",
-  avatar:"https://randomuser.me/api/portraits/men/30.jpg",
-};
